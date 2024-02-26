@@ -1,7 +1,8 @@
+from .base_page import BasePage
+
+from selene import browser
 from selene.core.entity import Element
 
-from .base_page import BasePage
-from selene import browser
 
 class AddCustomerPage(BasePage):
     def input_first_name(self) -> Element:
@@ -26,5 +27,3 @@ class AddCustomerPage(BasePage):
         al = browser.switch_to.alert
         assert 'Customer added successfully with customer id' in al.text
         al.accept()
-
-

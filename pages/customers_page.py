@@ -1,4 +1,5 @@
 from .base_page import BasePage
+
 from selene import browser, have, be
 from selene.core import query
 

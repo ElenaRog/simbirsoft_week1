@@ -2,8 +2,10 @@ from utils.generator import RandomData
 from pages.main_page import MainPage
 from pages.add_customer_page import AddCustomerPage
 from pages.customers_page import CustomerPage
+
 import allure
 import pytest
+
 random_user = RandomData()
 
 RANDOM_POST_CODE = random_user.post_code
